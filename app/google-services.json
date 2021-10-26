@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "592128021275",
+    "project_id": "tesit-fb",
+    "storage_bucket": "tesit-fb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:592128021275:android:6ecce2dbe9b8a4097979be",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "592128021275-go1g1unkumssiuf1bpfpalkulhvbfb99.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.myapplication",
+            "certificate_hash": "3cd93a0de67c5c0a5811721a02dfc3c74dadf112"
+          }
+        },
+        {
+          "client_id": "592128021275-iau8pk6mb4hb1nntuv825qrhlgvu8q6p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZHNbprtd_TpwZy0CnB8I46OoDTTAiNPQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "592128021275-iau8pk6mb4hb1nntuv825qrhlgvu8q6p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
