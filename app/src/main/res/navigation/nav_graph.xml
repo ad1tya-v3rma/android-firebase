@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/realTimeDbFragment">
+
+    <fragment
+        android:id="@+id/realTimeDbFragment"
+        android:name="com.example.myapplication.ui.view.RealTimeDbFragment"
+        android:label="Realtime DB"
+        tools:layout="@layout/fragment_real_time_db"/>
+</navigation>

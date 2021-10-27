@@ -2,12 +2,12 @@ package com.example.myapplication
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.example.myapplication.Utils.Constants
+import androidx.navigation.NavController
+import androidx.navigation.fragment.NavHostFragment
+import com.example.myapplication.utils.Constants
 import com.example.myapplication.databinding.ActivityMainBinding
 import com.google.firebase.FirebaseOptions
-import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
-import com.google.firebase.ktx.app
 import com.google.firebase.ktx.initialize
 
 class MainActivity : AppCompatActivity() {
@@ -18,13 +18,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+//        setUpNavController()
         initializeFirebase()
-
-        binding.crashButton.setOnClickListener {
-            val database = Firebase.database(Firebase.app("tesit"))
-            val myRef = database.reference
-            myRef.child("message").setValue("Hello, World!")
-        }
 
     }
 
@@ -34,6 +29,14 @@ class MainActivity : AppCompatActivity() {
             .setApplicationId(Constants.FIREBASE_APP_ID)
             .setDatabaseUrl(Constants.FIREBASE_DB_URL)
             .build()
-            Firebase.initialize(this, options, "tesit")
+        Firebase.initialize(this, options, "tesit")
     }
+
+    private fun setUpNavController() {
+        val navHostFragment =
+            supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
+        var navController: NavController = navHostFragment.navController
+        supportActionBar!!.title = "title"
+    }
+
 }
